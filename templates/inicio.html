@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tu tienda en línea</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+    {% load static %}
+	<link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+	<link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+	<!-- Barra de navegación -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container">
+			<a class="navbar-brand" href="#">Tu tienda en línea</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Productos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Contacto</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Encabezado -->
+	<header class="bg-primary text-white">
+		<div class="container text-center">
+			<h1>Tu tienda en línea</h1>
+			<p class="lead">Bienvenido a nuestra tienda en línea. Aquí encontrarás todo lo que necesitas.</p>
+		</div>
+	</header>
+
+	<!-- Contenido principal -->
+	<section class="py-5">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'img/producto-1.jpg' %}" alt="Producto 1">
+						<div class="card-body">
+							<h5 class="card-title">Producto 1</h5>
+							<p class="card-text">Descripción del producto 1.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'img/producto-2.jpg' %}" alt="Producto 2">
+						<div class="card-body">
+							<h5 class="card-title">Producto 2</h5>
+							<p class="card-text">Descripción del producto 2.</p>
+							<a href="#" class="btn btn-primary">Comprar</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card">
+						<img class="card-img-top" src="{% static 'img/producto-3.jpg' %}" alt="Producto 3">
+						
